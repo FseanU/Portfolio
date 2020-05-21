@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+        <div class="nav">
+            <a href="#">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <%= yield %>
+        
+        <footer>
+            <p>Hung-Chen Fu © 2020</p>
+        </footer>
+    </div>
   </body>
 </html>
