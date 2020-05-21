@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+/* Graphical variables */
+@import "config/colors"；
+
+/* pages */
+@import "pages/_index.css";
+
+
+
+body {
+  background-color: var(--main-color);
+  color: #353535;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: calc(40px + 1.5vw);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  font-size: calc(18px + 0.5vw);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  transition: all 1s ease-out;
+}
+
+.nav {
+  grid-column: 3/5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  /* margin-right: 3rem; */
+  margin: 1rem 3rem 0 0;
+  font-size: calc(18px+0.5vw);
+  color: var(--black);
+  font-weight: 300;
+  transition: all 0.4s ease-in;
+  border-bottom: solid var(--main-color) 2px;
+  padding-bottom: 0.2rem;
+}
+
+.nav a:hover {
+  border-bottom: solid var(--highlight) 2px;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
