@@ -1,3 +1,11 @@
+.cross {
+  display: flex;
+  justify-content: end;
+  grid-column: 4/5;
+  margin: 5rem 0 3rem 0;
+  font-size: 20px;
+}
+
 .content-jamin {
   display: grid;
   grid-template-columns: 1fr 7fr 5fr 1fr;
@@ -16,7 +24,6 @@
   align-items: end;
   border-top: solid var(--black) 2px;
   border-bottom: solid var(--black) 2px;
-  margin-top: 7rem;
 }
 
 .project-info h1 {
