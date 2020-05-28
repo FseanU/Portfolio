@@ -42,6 +42,7 @@ p {
 a {
   text-decoration: none;
   transition: all 1s ease-out;
+  color: var(--black);
 }
 
 .wrapper {
