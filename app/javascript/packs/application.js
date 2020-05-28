@@ -15,3 +15,15 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import { scrollAppear, smoothScroll } from '../components/page_text'
+
+document.addEventListener('turbolinks:load', () => {
+  window.addEventListener('scroll', scrollAppear);
+  
+  // smoothScroll
+  const projectBtn = document.querySelector('.projectBtn');
+  if (projectBtn) projectBtn.addEventListener('click', ()=> {
+    smoothScroll('.project', 1000);
+  })
+})
