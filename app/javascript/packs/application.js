@@ -23,7 +23,13 @@ document.addEventListener('turbolinks:load', () => {
   
   // smoothScroll
   const projectBtn = document.querySelector('.projectBtn');
+  const contactBtn = document.querySelector('.contactBtn');
   if (projectBtn) projectBtn.addEventListener('click', ()=> {
     smoothScroll('.project', 1000);
   })
+  if (contactBtn) contactBtn.addEventListener('click', ()=> {
+    smoothScroll('.contact', 1000);
+  })
+
+
 })
