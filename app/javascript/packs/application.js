@@ -15,21 +15,50 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
+import anime from 'animejs/lib/anime.es.js';
 import { scrollAppear, smoothScroll } from '../components/page_text'
 
 document.addEventListener('turbolinks:load', () => {
   window.addEventListener('scroll', scrollAppear);
   
-  // smoothScroll
   const projectBtn = document.querySelector('.projectBtn');
   const contactBtn = document.querySelector('.contactBtn');
+  const arrowLink = document.querySelector(".arrowLink");
+  const arrow = document.querySelector("#arrow");
+  // smoothScroll
   if (projectBtn) projectBtn.addEventListener('click', ()=> {
     smoothScroll('.project', 1000);
   })
   if (contactBtn) contactBtn.addEventListener('click', ()=> {
     smoothScroll('.contact', 1000);
   })
+  if (arrowLink) arrowLink.addEventListener('click', () => {
+    smoothScroll('.project', 1000);
+  })
 
 
+  // arrowLink animation
+  // arrowLink.addEventListener('mouseover', () => {
+  //   const timeline = anime.timeline({
+  //     duration: 500,
+  //     easing: 'cubicBezier(.5, .05, .1, .3)'
+  //   });
+  //   timeline.add({
+  //     targets: "#arrow",
+  //     rotate: 320
+  //   })
+  // })
+  if (arrowLink) arrowLink.addEventListener('mouseover', () => {
+    anime({
+      targets: '#arrow',
+      translateY: 120,
+      // direction: 'alternate',
+      loop: true,
+      easing: 'cubicBezier(.5, .05, .1, .3)'
+    })
+  })
+  if (arrowLink) arrowLink.addEventListener('mouseout', () => {
+    arrow.style.transform = "translateY(0)"
+    anime.remove('#arrow');
+  })
 })
