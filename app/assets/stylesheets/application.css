@@ -14,10 +14,9 @@
  *= require_self
  */
 /* Graphical variables */
-@import "config/colors"；
+@import "config/colors.css";
 
-/* pages */
-@import "pages/_index.css";
+
 
 
 

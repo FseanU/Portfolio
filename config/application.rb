@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 # test
-config.assets.initialize_on_precompile = false
+# config.assets.initialize_on_precompile = false
 
 module Portfolio
   class Application < Rails::Application
