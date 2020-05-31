@@ -104,6 +104,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
+    pg (1.2.3)
     public_suffix (4.0.5)
     puma (3.12.6)
     rack (2.2.2)
@@ -166,7 +167,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
@@ -208,11 +208,11 @@ DEPENDENCIES
   execjs
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  pg
   puma (~> 3.11)
   rails (~> 6.0.0)
   sass-rails (~> 5)
   selenium-webdriver
-  sqlite3 (~> 1.4)
   therubyracer
   turbolinks (~> 5)
   tzinfo-data
