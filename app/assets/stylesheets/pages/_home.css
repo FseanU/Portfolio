@@ -6,9 +6,34 @@
 
 .intro {
   grid-column: 2/4;
-  padding-top: 6em;
-  height: 60vh;
+  padding-top: 12em;
+  height: 85vh;
 }
+
+.see-project {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.see-project a {
+  border: 2px var(--black) solid;
+  border-radius: 50%;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.see-project a:hover {
+  border: 2px var(--highlight) solid;
+}
+
+/* .see-project svg {
+  fill: var(--black);
+}
+
+.see-project svg:hover {
+  fill: var(--highlight);
+} */
 
 .project {
   grid-column: 2/4;
