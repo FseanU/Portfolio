@@ -28,13 +28,27 @@
   font-size: calc(14px + 0.5vw);
 }
 
+.top-section {
+  grid-column: 2/4;
+}
+
+.line-top {
+  border-top: 2px solid var(--black);
+  grid-column: 2/4;
+}
+
+.line-bottom {
+  border-top: 2px solid var(--black);
+  grid-column: 2/4;
+}
+
 .project-info {
   grid-column: 2/4;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-top: solid var(--black) 2px;
-  border-bottom: solid var(--black) 2px;
+  /* border-top: solid var(--black) 2px; */
+  /* border-bottom: solid var(--black) 2px; */
 }
 
 .project-info h1 {
