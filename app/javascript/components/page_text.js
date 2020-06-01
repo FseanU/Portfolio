@@ -36,7 +36,8 @@ function smoothScroll(target, duration){
 }
 
 // arrow animation
-const arrow = document.querySelector(".arrowLink");
+
+
 
 
 export { scrollAppear, smoothScroll };
