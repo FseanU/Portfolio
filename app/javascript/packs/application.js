@@ -66,5 +66,5 @@ document.addEventListener('turbolinks:load', () => {
     .fromTo(title, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0")
     .fromTo(overview, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0.5")
     .fromTo(descr01, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0.5");
-    
+
 })
