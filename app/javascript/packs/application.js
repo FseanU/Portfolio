@@ -27,10 +27,6 @@ document.addEventListener('turbolinks:load', () => {
   const contactBtn = document.querySelector('.contactBtn');
   const arrowLink = document.querySelector(".arrowLink");
   const arrow = document.querySelector("#arrow");
-  // const year = document.querySelector('.year');
-  // const title = document.querySelector('.project-info h1');
-  // const overview = document.querySelector('.overview');
-  // const descr01 = document.querySelector('.descr-01');
   
 
   // smoothScroll
@@ -62,11 +58,5 @@ document.addEventListener('turbolinks:load', () => {
 
   // jamin page animation
   pageAnimation();
-  // let tl = gsap.timeline();
-  // if (year) tl.fromTo( ".line", {width: "0%"}, {width: "100%", ease: "power1.in"})
-  //   .fromTo(year, {opacity: "0%"}, {opacity: "100%", duration:0.5, ease: "power2.in"})
-  //   .fromTo(title, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0")
-  //   .fromTo(overview, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0.5")
-  //   .fromTo(descr01, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0");
 
 })
