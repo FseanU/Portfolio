@@ -21,7 +21,7 @@ import { scrollAppear, smoothScroll } from '../components/page_text'
 
 document.addEventListener('turbolinks:load', () => {
   window.addEventListener('scroll', scrollAppear);
-  
+
   const projectBtn = document.querySelector('.projectBtn');
   const contactBtn = document.querySelector('.contactBtn');
   const arrowLink = document.querySelector(".arrowLink");
@@ -65,6 +65,6 @@ document.addEventListener('turbolinks:load', () => {
     .fromTo(year, {opacity: "0%"}, {opacity: "100%", duration:1, ease: "power2.in"})
     .fromTo(title, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0")
     .fromTo(overview, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0.5")
-    .fromTo(descr01, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0.5");
+    .fromTo(descr01, {opacity: "0%"}, {opacity: "100%", ease: "power2.in"}, "<0");
 
 })
