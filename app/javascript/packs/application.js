@@ -18,7 +18,7 @@ require("channels")
 import anime from 'animejs/lib/anime.es.js';
 
 import { scrollAppear, smoothScroll } from '../components/page_text'
-import { pageAnimation, closeAnimation } from '../components/page_animation'
+import { pageAnimation, closeAnimation, homePageAnimation } from '../components/page_animation'
 
 document.addEventListener('turbolinks:load', () => {
   window.addEventListener('scroll', scrollAppear);
@@ -58,5 +58,6 @@ document.addEventListener('turbolinks:load', () => {
 
   // jamin page animation
   pageAnimation();
+  homePageAnimation();
 
 })
