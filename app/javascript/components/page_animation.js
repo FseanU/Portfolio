@@ -32,7 +32,7 @@ function closeAnimation() {
 function homePageAnimation () {
   const intro = document.querySelector(".intro");
   let tl = gsap.timeline();
-  if (intro) tl.fromTo( intro, {opacity: "0%"}, {opacity: "100%", duration: 0.8, ease: "power1.in"});
+  if (intro) tl.fromTo( intro, {opacity: "0%"}, {opacity: "100%", ease: "power1.in"});
 }
 
 export { pageAnimation, closeAnimation, homePageAnimation };

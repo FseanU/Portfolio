@@ -58,6 +58,6 @@ document.addEventListener('turbolinks:load', () => {
 
   // jamin page animation
   pageAnimation();
-  homePageAnimation();
+  // homePageAnimation();
 
 })
