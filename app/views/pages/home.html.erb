@@ -24,11 +24,13 @@
   </div>
 
   <div class="project" id="project">
-    <%# <a href="#">Jamin</a>
-    <a href="#">Bnboo</a>
-    <a href="#">Project 2</a> %>
-    <%= link_to "Jamin", jamin_path %>
-    <%= link_to "Project 1", project1_path %>
+    <%= link_to jamin_path do %>
+      <div class="title">
+      <h3>Jamin</h3>
+      </div>
+    <% end %>
+    <%# <%= link_to "Project 1", project1_path %>
+    <h3>Kuan<span>   (COMING SOON)</span></h3>
   </div>
 
   <div class="contact" id="contact">

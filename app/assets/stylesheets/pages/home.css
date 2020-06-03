@@ -41,12 +41,7 @@
   border-top: solid 0.2rem var(--black);
 }
 
-.project h1 {
-  border-bottom: solid 0.2rem var(--black);
-  margin: 0;
-  padding: 2rem 0;
-}
-.project a {
+.project h3 {
   border-bottom: solid 0.2rem var(--black);
   margin: 0;
   padding: 2rem 0;
@@ -57,9 +52,27 @@
   /* transition: -webkit-text-stroke 1s ease-in-out; */
   transition: all 0.3s ease-in;
   -webkit-text-stroke: 1.5px var(--black);
+  letter-spacing: 0.1rem;
 }
 
-.project a:hover {
+.project p {
+  border-bottom: solid 0.2rem var(--black);
+  margin: 0;
+  padding: 2rem 0;
+  font-size: calc(48px + 1.5VW);
+  font-weight: 400;
+  color: var(--black);
+  display: block;
+  letter-spacing: 0.1rem;
+}
+
+.project span {
+  font-size: 20px;
+  font-weight: 300;
+  -webkit-text-stroke: initial;
+}
+
+.title h3:hover {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--highlight);
   border-bottom: solid 0.2rem var(--highlight);
