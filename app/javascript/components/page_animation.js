@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-// jamin page animation
+// jamin page animation open page 
 function pageAnimation(){
   const year = document.querySelector('.year');
   const title = document.querySelector('.project-info h1');
@@ -14,5 +14,18 @@ function pageAnimation(){
 
 }
 
+// jamin page animation close page 
+function closeAnimation() {
+  const year = document.querySelector('.year');
+  const title = document.querySelector('.project-info h1');
+  const overview = document.querySelector('.overview');
+  const descr01 = document.querySelector('.descr-01');
+  let tl = gsap.timeline();
+  if (year) tl.fromTo( ".line", {width: "100%"}, {width: "0%", ease: "power1.in"})
+    .fromTo(year, {opacity: "100%"}, {opacity: "0%", duration:0.5, ease: "power2.in"})
+    .fromTo(title, {opacity: "100%"}, {opacity: "0%", ease: "power2.in"}, "<0")
+    .fromTo(overview, {opacity: "100%"}, {opacity: "0%", ease: "power2.in"}, "<0.5")
+    .fromTo(descr01, {opacity: "100%"}, {opacity: "0%", ease: "power2.in"}, "<0");
+}
 
-export { pageAnimation };
+export { pageAnimation, closeAnimation };
