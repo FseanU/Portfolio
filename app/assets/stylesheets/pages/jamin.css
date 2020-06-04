@@ -24,7 +24,6 @@
 }
 
 .content-jamin p {
-  /* font-size: 18px; */
   font-size: calc(14px + 0.5vw);
 }
 
@@ -59,7 +58,7 @@
   font-size: 16px;
 }
 
-.project-info .year{
+.year{
   display: flex;
   justify-content: flex-end;
 }
@@ -94,10 +93,6 @@
   display: grid;
   grid-gap: 10rem 0;
   /* grid-template-columns: repeat(12, 1fr); */
-}
-
-.details p {
-  font-size: 20px;
 }
 
 .details h2 {
@@ -140,4 +135,110 @@
 .descr-02 div, .descr-04 div {
   grid-column: 1/5;
   text-align: right;
+}
+
+
+/* media queries */
+
+@media (max-width: 480px) {
+  .cross {
+    margin: 0;
+  }
+
+  .project-info p, .details p {
+    font-size: inherit;
+  }
+
+  .content-jamin {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-gap: 4rem 0;
+  }
+
+  .content-jamin p {
+    line-height: 1.8em;
+  }
+
+  .top-section::before {
+    content: "Jamin";
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .top-section {
+    grid-column: 2/3;
+  }
+
+  .line-top {
+    grid-column: 2/3;
+    margin-top: 2rem;
+  }
+  
+  .project-info {
+    grid-column: 2/3;
+  }
+
+  .project-info h1 {
+    display: none;
+  }
+
+  .year {
+    display: block;
+  }
+
+  .team {
+    margin: 0;
+    text-align: right;
+  }
+
+  .overview {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .overview p {
+    grid-column: 1/2;
+  }
+
+  .overview img {
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .details {
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+    margin-top: 2rem;
+  }
+
+  .details h2 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  .details img {
+    width: 100%;
+  }
+
+  .details > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details .descr-02, .details .descr-04 {
+    flex-direction: column-reverse;
+  }
+
+  .descr-02 div, .descr-04 div {
+    text-align: left;
+  }
+}
+
+@media (max-width: 370px) {
+  .project-info p {
+    font-size: 12px;
+  }
 }

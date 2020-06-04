@@ -45,14 +45,11 @@ a {
 }
 
 .wrapper {
-  /* display: grid; */
-  /* grid-template-columns: 2fr 20fr 6fr 1fr; */
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .nav {
-  grid-column: 3/5;
   display: flex;
   justify-content: flex-end;
 }
@@ -75,4 +72,19 @@ a {
 footer p {
   font-size: 12px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: calc(32px + 1.5vw);
+  }
+
+  p {
+    font-size: calc(14px + 0.5vw);
+  }
+
+  .nav {
+    display: none;
+  }
+
 }

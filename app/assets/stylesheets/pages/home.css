@@ -82,3 +82,38 @@
   grid-column: 2/4;
   padding: 16rem 0 8rem 0;
 }
+
+@media (max-width: 480px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    scroll-behavior: smooth;
+  }
+
+  .intro {
+    grid-column: 2/3;
+    padding-top: 4rem;
+    height: 85vh;
+  }
+
+  .intro p br {
+    display: none;
+  }
+
+  .project {
+    grid-column: 2/3;
+  }
+
+  .project span {
+    font-size: 12px;
+  }
+
+  .contact {
+    grid-column: 2/3;
+    padding: 8rem 0;
+  }
+
+  .contact p br{
+    display: none;
+  }
+}
