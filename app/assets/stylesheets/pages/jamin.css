@@ -147,6 +147,7 @@
 
   .project-info p, .details p {
     font-size: inherit;
+    font-weight: 400;
   }
 
   .content-jamin {
@@ -216,6 +217,7 @@
   .details h2 {
     margin-bottom: 1rem;
     font-size: 20px;
+    font-weight: 500;
   }
 
   .details img {
