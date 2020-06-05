@@ -107,6 +107,10 @@
     .see-project {
       margin-top: 4rem;
     }
+
+    .project h3 {
+      font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 480px) {
