@@ -37,7 +37,7 @@
 }
 
 .line-bottom {
-  border-top: 2px solid var(--black);
+  border-top: 3px solid var(--black);
   grid-column: 2/4;
 }
 
@@ -140,6 +140,15 @@
 
 /* media queries */
 
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .cross {
+    margin: 2rem 0 -2rem 0;
+  }
+
+}
+
 @media (max-width: 480px) {
   .cross {
     margin: 0;
@@ -147,7 +156,7 @@
 
   .project-info p, .details p {
     font-size: inherit;
-    font-weight: 400;
+    font-weight: 4.,l00;
   }
 
   .content-jamin {
