@@ -37,7 +37,7 @@
 }
 
 .line-bottom {
-  border-top: 3px solid var(--black);
+  border-top: 2px solid var(--black);
   grid-column: 2/4;
 }
 
