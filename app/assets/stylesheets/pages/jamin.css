@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   grid-column: 4/5;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 -2rem 0;
 }
 
 .cross a {
