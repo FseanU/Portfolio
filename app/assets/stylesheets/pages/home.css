@@ -14,19 +14,20 @@
   display: flex;
   justify-content: center;
   margin-top: 8rem;
-}
-
-.see-project a {
-  border: 2px var(--black) solid;
-  border-radius: 50%;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
 }
 
-.see-project a:hover {
-  border: 2px var(--highlight) solid;
+.see-project p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem 0;
 }
 
+#arrow {
+  padding-bottom: 1rem;
+}
 /* .see-project svg {
   fill: var(--black);
 }

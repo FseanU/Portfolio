@@ -42,18 +42,26 @@ document.addEventListener('turbolinks:load', () => {
 
 
   // arrowLink animation
-  if (arrowLink) arrowLink.addEventListener('mouseover', () => {
-    anime({
-      targets: '#arrow',
-      translateY: 120,
-      // direction: 'alternate',
-      loop: true,
-      easing: 'cubicBezier(.5, .05, .1, .3)'
-    })
-  })
-  if (arrowLink) arrowLink.addEventListener('mouseout', () => {
-    arrow.style.transform = "translateY(0)"
-    anime.remove('#arrow');
+  // if (arrowLink) arrowLink.addEventListener('mouseover', () => {
+  //   anime({
+  //     targets: '#arrow',
+  //     translateY: 120,
+  //     // direction: 'alternate',
+  //     loop: true,
+  //     easing: 'cubicBezier(.5, .05, .1, .3)'
+  //   })
+  // })
+  // if (arrowLink) arrowLink.addEventListener('mouseout', () => {
+  //   arrow.style.transform = "translateY(0)"
+  //   anime.remove('#arrow');
+  // })
+
+  anime({
+    targets: '#arrow',
+    translateY: 50,
+    duration: 1500,
+    loop: true,
+    easing: 'cubicBezier(.5, .05, .1, .3)'
   })
 
   // jamin page animation
