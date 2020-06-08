@@ -1,3 +1,38 @@
+.nav {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  /* margin-right: 3rem; */
+  margin: 1rem 3rem 0 0;
+  font-size: calc(18px+0.5vw);
+  color: var(--black);
+  font-weight: 300;
+  transition: all 0.4s ease-in;
+  border-bottom: solid var(--main-color) 2px;
+  padding-bottom: -0.2rem;
+}
+
+.nav a:hover {
+  border-bottom: solid var(--highlight) 2px;
+}
+
+.nav-logo {
+  display: grid;
+  grid-template-columns: 2fr 16fr 10fr 1fr;
+  margin-top: 1rem;
+}
+
+.nav-logo a{
+  grid-column: 2/3;
+}
+
+.logo {
+  width: 45px;
+}
+
 .content {
   display: grid;
   grid-template-columns: 2fr 20fr 6fr 1fr;
@@ -115,6 +150,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
