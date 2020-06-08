@@ -49,25 +49,7 @@ a {
   margin: 0 auto;
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.nav a {
-  /* margin-right: 3rem; */
-  margin: 1rem 3rem 0 0;
-  font-size: calc(18px+0.5vw);
-  color: var(--black);
-  font-weight: 300;
-  transition: all 0.4s ease-in;
-  border-bottom: solid var(--main-color) 2px;
-  padding-bottom: 0.2rem;
-}
-
-.nav a:hover {
-  border-bottom: solid var(--highlight) 2px;
-}
 
 footer p {
   font-size: 12px;
@@ -93,10 +75,6 @@ footer p {
   p {
     font-size: calc(14px + 0.5vw);
     font-weight: 400;
-  }
-
-  .nav {
-    display: none;
   }
 
 }
