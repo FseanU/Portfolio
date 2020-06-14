@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   def jamin
   end
   
-  def project1
+  def about
   end
 end
