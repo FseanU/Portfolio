@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+// import * as THREE from 'three';
 import hoverEffect from 'hover-effect'
 import side from 'images/profile-side.png'
 import front from 'images/profile-front.png'
@@ -10,7 +10,9 @@ function profileImgDistortion (){
     intensity: 0.1,
     image1: side,
     image2: front,
-    displacementImage: diss
+    displacementImage: diss,
+    speedIn: 2,
+    speedOut: 2,
   })
 }
 

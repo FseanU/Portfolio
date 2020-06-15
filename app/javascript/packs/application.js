@@ -27,10 +27,13 @@ document.addEventListener('turbolinks:load', () => {
 
   const projectBtn = document.querySelector('.projectBtn');
   const contactBtn = document.querySelector('.contactBtn');
-  const arrowLink = document.querySelector(".arrowLink");
+  const arrowLink = document.querySelector('.arrowLink');
   const arrow = document.querySelector("#arrow");
+  const aboutPage = document.querySelector('.content-about');
   
-
+  // profile img distortion effect
+  if (aboutPage) profileImgDistortion();
+  
   // smoothScroll
   if (projectBtn) projectBtn.addEventListener('click', ()=> {
     smoothScroll('.project', 1000);
@@ -69,10 +72,4 @@ document.addEventListener('turbolinks:load', () => {
   // jamin page animation
   pageAnimation();
   
-
-  // profile img distortion effect
-  profileImgDistortion();
-
-
-
 })
