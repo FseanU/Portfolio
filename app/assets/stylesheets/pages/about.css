@@ -1,0 +1,56 @@
+h1, p{
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  display: grid;
+  grid-template-columns: 1fr 5fr 7fr 1fr;
+}
+
+.back a {
+  letter-spacing: 1px;
+  grid-column: 2/3;
+  margin: 1.5rem 0 0 0;
+  transition: all 0.2s ease-in;
+}
+
+.back a:hover {
+  color: var(--highlight);
+}
+
+.content-about {
+  display: grid;
+  grid-template-columns: 1fr 5fr 7fr 1fr;
+  height: 90vh;
+}
+
+.content-about p {
+  font-size: calc(14px + 0.5vw);
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+
+.about-photo-descr {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: 0;
+}
+
+.about-photo {
+  grid-column: 1/2;
+  padding-right: 3rem;
+  align-self: center;
+}
+
+.about-photo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-descr {
+  grid-column: 2/3;
+  padding-left: 3rem;
+  align-self: center;
+}
