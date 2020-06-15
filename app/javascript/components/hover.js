@@ -4,7 +4,7 @@ import side from 'images/profile-side.png'
 import front from 'images/profile-front.png'
 import diss from 'images/diss.png'
 
-function hover (){
+function profileImgDistortion (){
   new hoverEffect({
     parent: document.querySelector('.distortion'),
     intensity: 0.1,
@@ -14,4 +14,4 @@ function hover (){
   })
 }
 
-export { hover };
+export { profileImgDistortion };
