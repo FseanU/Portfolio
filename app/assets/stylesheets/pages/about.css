@@ -70,4 +70,8 @@ h1, p{
       width: 300px;
       height: 400px;
     }
+
+    .content-about {
+      height: 88vh;
+    }
   }
