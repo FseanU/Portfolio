@@ -39,6 +39,11 @@ h1, p{
   padding: 0;
 }
 
+.distortion {
+  width: 350px;
+  height: 450px;
+}
+
 .about-photo {
   grid-column: 1/2;
   padding-right: 3rem;
