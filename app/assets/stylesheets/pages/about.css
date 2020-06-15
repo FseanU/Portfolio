@@ -9,7 +9,8 @@ h1, p{
 }
 
 .back a {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  font-weight: 300;
   grid-column: 2/3;
   margin: 1.5rem 0 0 0;
   transition: all 0.2s ease-in;
