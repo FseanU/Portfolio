@@ -25,7 +25,7 @@
   margin-top: 1rem;
 }
 
-.nav-logo a{
+.logo-wrapper {
   grid-column: 2/3;
 }
 
@@ -43,6 +43,10 @@
   grid-column: 2/4;
   padding-top: 12em;
   height: 85vh;
+}
+
+.intro p, .contact p {
+  padding-top: 1.5rem;
 }
 
 .see-project {
@@ -118,6 +122,15 @@
   grid-column: 2/4;
   padding: 16rem 0 8rem 0;
 }
+
+
+
+@media screen 
+  and (min-device-width: 1824px) {
+    .see-project {
+      margin-top: 16rem;
+    }
+  }
 
 @media screen 
   and (min-device-width: 1200px) 
