@@ -2,7 +2,8 @@
   display: flex;
   justify-content: flex-end;
   grid-column: 4/5;
-  margin: 2rem 0 -2rem 0;
+  margin: 0 0 -2rem 0;
+  opacity: 0;
 }
 
 .cross a {
@@ -153,6 +154,7 @@
 @media (max-width: 480px) {
   .cross {
     margin: 0;
+    opacity: 100;
   }
 
   .project-info p, .details p {
