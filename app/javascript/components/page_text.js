@@ -35,9 +35,4 @@ function smoothScroll(target, duration){
   requestAnimationFrame(animation);
 }
 
-// arrow animation
-
-
-
-
 export { scrollAppear, smoothScroll };
