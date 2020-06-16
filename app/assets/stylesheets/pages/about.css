@@ -82,7 +82,7 @@ h1, p{
   .content-about {
     grid-template-columns: 1fr 20fr 1fr;
     height: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
   }
 
   .content-about p {

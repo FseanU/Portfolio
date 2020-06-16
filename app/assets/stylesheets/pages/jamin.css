@@ -153,7 +153,7 @@
 
 @media (max-width: 480px) {
   .cross {
-    margin: 0;
+    margin: -2rem 0 0 0;
     opacity: 100;
   }
 
@@ -188,6 +188,7 @@
 
   .top-section {
     grid-column: 2/3;
+    margin-top: -0.5rem;
   }
 
   .line-top {
