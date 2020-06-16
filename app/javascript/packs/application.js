@@ -75,7 +75,7 @@ document.addEventListener('turbolinks:load', () => {
   // adjust canvas size
   if (window.screen.width < 480 && aboutPage) {
     const canvas = document.querySelector('canvas');
-    fitToContainer(canvas);
+    // fitToContainer(canvas);
     lineBreak();
   } 
 
