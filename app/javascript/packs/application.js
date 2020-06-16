@@ -21,12 +21,6 @@ import { scrollAppear, smoothScroll } from '../components/page_text'
 import { pageAnimation, closeAnimation, homePageAnimation } from '../components/page_animation'
 import { profileImgDistortion } from '../components/hover';
 
-// google analytics
-document.addEventListener('turbolinks:load', function() {
-  gtag('config', 'UA-169601742-1', {'page_location': event.data.url});
-})
-
-
 document.addEventListener('turbolinks:load', () => {
   window.addEventListener('scroll', scrollAppear);
 
