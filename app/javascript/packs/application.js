@@ -20,6 +20,7 @@ import anime from 'animejs/lib/anime.es.js';
 import { scrollAppear, smoothScroll } from '../components/page_text'
 import { pageAnimation, closeAnimation, homePageAnimation } from '../components/page_animation'
 import { profileImgDistortion } from '../components/hover';
+import { fitToContainer, lineBreak } from '../components/canvas';
 
 document.addEventListener('turbolinks:load', () => {
   window.addEventListener('scroll', scrollAppear);
@@ -70,5 +71,15 @@ document.addEventListener('turbolinks:load', () => {
 
   // jamin page animation
   pageAnimation();
+  
+  // adjust canvas size
+  if (window.screen.width < 480 && aboutPage) {
+    const canvas = document.querySelector('canvas');
+    fitToContainer(canvas);
+    lineBreak();
+  } 
+
+  
+
   
 })
