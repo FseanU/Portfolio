@@ -163,8 +163,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  .contactBtn {
+  .contactBtn, .projectBtn {
     display: none;
+  }
+
+  .nav a {
+    margin: 1rem 1.5rem 0 0;
   }
 
   .content {
@@ -176,7 +180,7 @@
   .intro {
     grid-column: 2/3;
     padding-top: 4rem;
-    height: 85vh;
+    height: 70vh;
   }
 
   .intro p br {
