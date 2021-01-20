@@ -7,7 +7,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "4.2.2",
     "animejs": "^3.2.0",
-    "gsap": "^3.3.0",
+    "gsap": "^3.6.0",
     "hover-effect": "^1.1.0",
     "three": "^0.117.1",
     "turbolinks": "^5.2.0"
